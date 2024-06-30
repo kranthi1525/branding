@@ -200,7 +200,7 @@ body, html {
 .service-icon {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--yellow);
+  color: var(--black);
 }
 
 .service-title {
@@ -409,13 +409,13 @@ footer {
 }
 
 .social-links a {
-  color: var(--yellow);
-  font-size: 1.1rem;
+  color: var(--black);
+  font-size: 1.4rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--dark-yellow);
+  color: var(--dark-gray);
   transform: scale(1.2);
 }
 
@@ -468,8 +468,8 @@ footer {
 .choose-package {
   width: 100%;
   padding: 12px;
-  background: var(--dark-yellow);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -491,9 +491,9 @@ footer {
 
 .package-btn {
   padding: 10px;
-  background: var(--light-gray);
-  color: var(--white);
-  border: none;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -501,7 +501,7 @@ footer {
 }
 
 .package-btn:hover {
-  background: var(--dark-gray);
+  background: var(--yellow);
 }
 
 .package-btn.active {
@@ -522,7 +522,7 @@ footer {
 
 .price-display #price {
   font-size: 2.5rem;
-  color: var(--yellow);
+  color: var(--black);
   font-weight: 700;
 }
 
