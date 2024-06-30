@@ -17,18 +17,32 @@
 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-logo">LOGO</a>
-            <ul class="navbar-menu">
-                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Portfolio</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">LOGO</a>
+      <div class="hamburger-menu" id="hamburger-menu">
+        &#9776;
+      </div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link">Portfolio</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
 
+
+  <script>
+    document.getElementById("hamburger-menu").addEventListener("click", function() {
+      var navbarMenu = document.getElementById("navbar-menu");
+      var hamburgerMenu = document.getElementById("hamburger-menu");
+      navbarMenu.classList.toggle("active");
+      hamburgerMenu.classList.toggle("active");
+    });
+  </script>
+  
     <section class="hero">
         <div class="hero-content">
             <img src="images/logo-white.png" alt="" style="width: 30rem;">
