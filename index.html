@@ -13,43 +13,47 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-container">
-      <a href="#" class="navbar-logo">LOGO</a>
-      <div class="hamburger-menu" id="hamburger-menu">
-        &#9776;
-      </div>
-      <ul class="navbar-menu" id="navbar-menu">
-        <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Portfolio</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-      </ul>
+    <div class="logonav">Branding Jester</div>
+    <div class="nav-links" id="navLinks">
+        <a href="#">Projects</a>
+        <a href="#">Services</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Pricing</a>
     </div>
-  </nav>
-  
+    <button class="cta-button">Book a Free Call</button>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
 
-
-  <script>
-    document.getElementById("hamburger-menu").addEventListener("click", function() {
-      var navbarMenu = document.getElementById("navbar-menu");
-      var hamburgerMenu = document.getElementById("hamburger-menu");
-      navbarMenu.classList.toggle("active");
-      hamburgerMenu.classList.toggle("active");
-    });
-  </script>
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
+</script>
   
     <section class="hero">
-        <div class="hero-content">
-            <img src="images/logo-white.png" alt="" style="width: 30rem;">
-            <h1>Boost Your Shopify Store</h1>
-            <p>WE HELP SHOPIFY STORE OWNERS INCREASE THEIR SALES</p>
-            <a href="#" class="cta-button">Contact</a>
+      <div class="hero-section">
+        <h1>We Build <span class="highlight">Websites</span> For</h1>
+        <h2>E-commerce Brands</h2>
+        <p>Our team crafts beautiful and functional websites that not only attract visitors but also convert them into loyal customers. Let's take your digital presence to the next level.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Book a Call</a>
+            <a href="#" class="btn btn-secondary">View Projects</a>
         </div>
+        <div>
+            <span class="rating">★★★★★</span><br>
+            <span class="clients">Worked with 12+ Companies</span>
+        </div>
+    </div>
+    <div class="illustration">
+      
+    </div>
     </section>
 
     <section class="marquee-section">
@@ -76,54 +80,178 @@
     </section>
     
     <section class="services">
-        <div class="services-container">
-            <div class="service-card">
-                <i class="fas fa-paint-brush service-icon"></i>
-                <h3 class="service-title">Shopify Design</h3>
-                <p>Create a stunning and conversion-optimized Shopify store.</p>
+      <h1>our services</h1>
+      <div class="services-container">
+        <div class="service-list">
+            <div class="service-box">
+                <h2 class="service-title">SOCIAL MEDIA MANAGEMENT</h2>
+                <h3 class="service-subtitle">Instagram, LinkedIn and more</h3>
+                <p class="service-description">Amplify your social media impact through expert management services. We devise captivating strategies for heightened engagement, follower growth, and extensive reach.</p>
+                <div class="dot-container">
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+              </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-chart-line service-icon"></i>
-                <h3 class="service-title">Sales Optimization</h3>
-                <p>Implement strategies to boost your Shopify store's sales.</p>
+            <div class="service-box">
+                <h2 class="service-title">360° YOUTUBE MANAGEMENT</h2>
+                <h3 class="service-subtitle">For Brands and Influencers</h3>
+                <p class="service-description">All-encompassing support for strategy, post-production, operations, and analytics, driving channel growth and success.</p>
+                <div class="dot-container">
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-cogs service-icon"></i>
-                <h3 class="service-title">Custom Development</h3>
-                <p>Tailor-made solutions to enhance your Shopify experience.</p>
+            <div class="service-box">
+                <h2 class="service-title">GRAPHIC DESIGNING</h2>
+                <h3 class="service-subtitle">Multipurpose Designing</h3>
+                <p class="service-description">Elevate your brand with versatile, tailored multipurpose graphic design services: stunning visuals for marketing, branding, and social media.</p>
+                <div class="dot-container">
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                </div>
             </div>
         </div>
+    </div>
     </section>
 
-    <section class="carousel-section">
-        <h1 class="team-heading" style="color: white;">Our Portfolio</h1>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <img src="images/goodlady.png" alt="Portfolio Item 1">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project and its success.</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/tejapickels.png" alt="Portfolio Item 2">
-                    <h3>Project Title 2</h3>
-                    <p>Description of the project and its success.</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vantakalufoods.png" alt="Portfolio Item 3">
-                    <h3>Project Title 3</h3>
-                    <p>Description of the project and its success.</p>
-                </div>
-            </div>
+    <section class="Portfolio">
+      <h1>our Portfolio</h1>
+      <div class="container1">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn " data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="shopify">shopify websites</button>
+            <button class="filter-btn" data-filter="cgi">cgi marketing</button>
+            <button class="filter-btn" data-filter="product-photography">product photography</button>
         </div>
+        <div class="gallery">
+            <div class="card" data-category="branding">
+                <h2 class="card-title">VANTAKALU FOODS</h2>
+                <p class="card-category">Branding</p>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iste odio nihil debitis omnis ut soluta dolorem in, tenetur libero!</p>
+                <a href="#" class="card-link">See project</a>
+            </div>
+            <div class="card" data-category="branding">
+                <h2 class="card-title">TEJA FOODS</h2>
+                <p class="card-category">Branding</p>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At fugiat iure natus sapiente, labore nam atque itaque non rerum molestiae.</p>
+                <a href="#" class="card-link">See project</a>
+            </div>
+            <div class="card" data-category="shopify">
+                <h2 class="card-title">VANTAKALU FOODS</h2>
+                <p class="card-category">Shopify Website Designing</p>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis earum tenetur! Repudiandae eligendi qui sed eius et, cumque minima.</p>
+                <a href="#" class="card-link">See project</a>
+            </div>
+            <div class="card" data-category="shopify">
+              <h2 class="card-title">SIKKOLE</h2>
+              <p class="card-category">Shopify Website Designing</p>
+              <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magni quidem vero fuga beatae quod illo perferendis reprehenderit. Dolorum, veniam.</p>
+              <a href="#" class="card-link">See project</a>
+          </div>
+          <div class="card" data-category="shopify">
+            <h2 class="card-title">CASEANDCLOTH</h2>
+            <p class="card-category">Shopify Website Designing</p>
+            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis veritatis ex numquam incidunt nostrum nobis id error facere porro?</p>
+            <a href="#" class="card-link">See project</a>
+        </div>
+        <div class="card" data-category="cgi">
+          <h2 class="card-title">HUSLE LIFESTYLE</h2>
+          <p class="card-category">CGI marketing</p>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quia quisquam dicta aliquid quo atque? Corrupti delectus explicabo aut nulla.</p>
+          <a href="#" class="card-link">See project</a>
+        </div>
+          <div class="card" data-category="product-photography">
+          <h2 class="card-title">GOLDEN LADY</h2>
+          <p class="card-category">Product photography</p>
+          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis veritatis ex numquam incidunt nostrum nobis id error facere porro?</p>
+          <a href="#" class="card-link">See project</a>
+        </div>
+        <div class="card" data-category="product-photography">
+          <h2 class="card-title">SIKKOLE</h2>
+          <p class="card-category">Product Photography</p>
+          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis veritatis ex numquam incidunt nostrum nobis id error facere porro?</p>
+          <a href="#" class="card-link">See project</a>
+        </div>
+        </div>
+    </div>
+    <button id="loadMoreBtn" class="load-more-btn btn-secondary" style="padding: 10px;font-size: medium;width: 10%;left: 45%;position: relative;margin: 30px;border-radius: 20px;">Load More</button>
+
+    <script>
+                const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.card');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+        let currentlyShown = 6;
+        const increment = 6;
+
+        function showCards(filter = 'all') {
+            let shown = 0;
+            cards.forEach((card, index) => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    if (shown < currentlyShown) {
+                        card.style.display = 'block';
+                        shown++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide "Load More" button
+            if (shown < cards.length && filter === 'all') {
+                loadMoreBtn.style.display = 'block';
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                currentlyShown = 6; // Reset to initial count when changing filters
+                showCards(filter);
+            });
+        });
+
+        loadMoreBtn.addEventListener('click', () => {
+            currentlyShown += increment;
+            showCards();
+        });
+
+        // Initial display
+        showCards();
+    </script>
     </section>
 
-    <section class="testimonials">
-        <div class="testimonial-container">
-            <p class="testimonial-text">100% MONEY BACK GUARANTEE</p>
-            <p class="testimonial-author">We'll refund all your money if the project is not delivered on the agreed timeline!</p>
-        </div>
-    </section>
+   
 
 
     <section class="six">
@@ -131,57 +259,103 @@
     <h1 class="headi" style="text-align: center; color: white; padding: 20px">FEATURES INCLUDED IN <br />EVERY WEBSITE WE BUILD</h1>
   </div>
   <div class="twoo">
-    <div class="box">
-       <div class="in" style="display: flex;gap: 10px;">
-        <img src="images/graph.svg" alt="">
-        <h4>High-Converting Design</h4>
-       </div>
+   
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" >HIGH CONVERTING DESIGN</h2>
+      <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quia eaque deserunt cumque, dolor culpa sint. Officia ea aperiam provident aut iste accusantium eos quam.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+    </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+    <h2 class="service-title">ON-POINT CONTENT</h2>
+    <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus soluta quasi libero et eaque aliquam itaque, quas ullam sed, maxime quod nostrum tempora dolorem.</p>
+    <div class="dot-container">
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+    </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" >BREATH TAKING GRAPHICS</h2>
+      <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium illo, exercitationem sint iusto amet culpa sunt ducimus quod minima molestias at vitae repudiandae quaerat?</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" >PAYMENT INTEGRATION</h2>
+      <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda possimus libero omnis cumque aliquid delectus enim ducimus, atque nesciunt, pariatur consequuntur officia, aliquam quod.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" >SHIPPING SETUP</h2>
+      <p class="service-description">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime mollitia neque eius, soluta impedit excepturi doloremque dignissimos ab! Assumenda vitae non temporibus doloremque et repellendus.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" >ECOMMERCE PLUGINS</h2>
+      <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ullam nobis in error, neque, laborum vel quibusdam architecto ipsa dolore natus cum fuga ratione excepturi.
+      </p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    
+    <!-- <div class="box">
       
-      <p>
-        Balancing aesthetics with usability, our designs are not just
-        visually stunning but also user-friendly.
-      </p>
-    </div>
-    <div class="box">
-      <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
-        <img src="images/pen.svg" alt="">
-        <h4>On-Point Content</h4>
-       </div>
-      
-      <p>
-        We maintain a consistent brand voice across all content, building brand recognition and trust.
-      </p>
-    </div>
-    <div class="box">
-      <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
-        <img src="images/gallery-dark.svg" alt="">
-        <h4>Breathtaking Graphics</h4>
-       </div>
-      
-      <p>
-        AI enables us to produce innovative banner ideas which is not possible with traditional design methods.
-      </p>
-    </div>
-    <div class="box">
-      <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
-        <img src="images/wallet.svg" alt="">
-        <h4>Payment Integration</h4>
-       </div>
-     
-      <p>
-        We are tied up with Phone Pe to ensure secure and seamless transactions for your website customers
-      </p>
-    </div>
-    <div class="box">
-      <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
-        <img src="images/cart.svg" alt="">
-        <h4>Shipping Setup</h4>
-       </div>
-      
-      <p>
-        We connect you with Shipping partners who will take care of shipping the products to your customers.
-      </p>
-    </div>
+   
+    
     <div class="box">
       <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
         <img src="images/extensions-dark.svg" alt="">
@@ -191,7 +365,7 @@
       <p>
         We use industry standard plugins to ensure your website is enabled with features meant to increase sales.
       </p>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -337,39 +511,98 @@
     button.classList.add("active");
   }
   </script>
-  <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-icon">+</span>
-          Why are you expensive?
-        </button>
-        <div class="faq-answer">
-          <p>Our prices reflect the quality of our services and we love to work with clients who value quality and are willing to invest in the best for their business.</p>
+
+
+
+<div class="contact-container">
+ <div class="head">
+  <h1>CONTACT US</h1>
+  <p class="subheading">LET'S <span class="handwritten">Talk About Ideas</span></p>
+  
+ </div>
+ <div class="illustration">
+  <!-- You would insert your image here -->
+  <img src="images/contact_illustrate.svg" alt="Contact Illustration">
+</div>
+  <div class="contact-content">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="icon">✉️</div>
+        <div class="info">
+          <h3>Email</h3>
+          <p>saransh@markitup.in</p>
+          <p>ishan@markitup.in</p>
         </div>
       </div>
-      <!-- Add more faq-item divs for additional questions/answers -->
-        <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-icon">+</span>
-          Why are you expensive?
-        </button>
-        <div class="faq-answer">
-          <p>Our prices reflect the quality of our services and we love to work with clients who value quality and are willing to invest in the best for their business.</p>
-        </div>
-      </div>
-        <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-icon">+</span>
-          Why are you expensive?
-        </button>
-        <div class="faq-answer">
-          <p>Our prices reflect the quality of our services and we love to work with clients who value quality and are willing to invest in the best for their business.</p>
+      
+      <div class="contact-item">
+        <div class="icon">📝</div>
+        <div class="info">
+          <h3>Fill our contact form</h3>
+          <button class="contact-button">CONTACT</button>
         </div>
       </div>
     </div>
-  </section>
+    
+    
+  </div>
+</div>
+
+
+
+
+  <section class="faq">
+
+
+    <div class="faq-container">
+      <h1>Answers to Your Most Common Questions</h1>
+      <p class="subtitle">Explore our FAQ section to find clear and concise answers about our services, processes, and more.</p>
+      
+      <div class="faq-item">
+          <div class="faq-question">How long does it take to create a website?</div>
+          <div class="faq-answer">The time required varies depending on the complexity of the project. A simple website might take 2-4 weeks, while a more complex one could take 2-3 months or more.</div>
+      </div>
+      
+      <div class="faq-item">
+          <div class="faq-question">What are the key steps involved in the website development process?</div>
+          <div class="faq-answer">The key steps typically include planning, design, development, content creation, testing, and launch. Each phase is crucial for creating a successful website.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Can you integrate ecommerce functionality into my website?</div>
+          <div class="faq-answer">Yes, we can integrate various ecommerce solutions depending on your needs, from simple payment gateways to full-fledged online stores with inventory management.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Do you provide website maintenance services after launch?</div>
+          <div class="faq-answer">Yes, we offer ongoing maintenance packages to ensure your website remains secure, up-to-date, and performs optimally after launch.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">What factors determine the cost of building a custom website?</div>
+          <div class="faq-answer">Factors include the site's complexity, number of pages, custom functionality, design requirements, and whether you need content creation services.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Do you optimize websites for search engines (SEO)?</div>
+          <div class="faq-answer">Yes, we implement on-page SEO best practices during development and can provide more comprehensive SEO services if needed.</div>
+      </div>
+  </div>
+</section>
+
+  <script>
+      document.querySelectorAll('.faq-item').forEach(item => {
+          item.addEventListener('click', () => {
+              document.querySelectorAll('.faq-item').forEach(otherItem => {
+                  if (otherItem !== item) {
+                      otherItem.classList.remove('active');
+                  }
+              });
+              item.classList.toggle('active');
+          });
+      });
+  </script>
+  
   <script>
     const faqItems = document.querySelectorAll('.faq-item');
   
